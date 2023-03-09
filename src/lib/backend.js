@@ -1,6 +1,9 @@
-const axios = require('axios').default;
+const axios = require("axios").default;
 
-const URL = process.env.NODE_ENV === 'production' ? `${process.env.REACT_APP_BACKEND}/v1` : '/v1';
+const URL =
+  process.env.NODE_ENV === "production"
+    ? `${process.env.REACT_APP_BACKEND}/v1`
+    : "/v1";
 
 const BACKEND_API = URL;
 
@@ -10,9 +13,9 @@ const BACKEND_API = URL;
  */
 const backendAPI = axios.create({
   baseURL: BACKEND_API,
-  timeout: 5000,
+  timeout: 30000,
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 
