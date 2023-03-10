@@ -21,25 +21,21 @@ const success_checkout_body = {
   delivery: {
     day: "63fe19efe849c56fe3ebb0c7",
     period: "63fe19d4e849c56fe3ebb0ba",
-    date: "2023-03-14",
+    date: "2023-03-28",
   },
 };
 
+const lead_uuid = "f775cd17-ba33-4ae0-b0b5-94eadaf98728";
+
 const Success = () => {
-  const { search } = useLocation();
-
-  const [[key, uuid]] = useMemo(() => new URLSearchParams(search), [search]);
-
   useEffect(() => {
-    if (!key) return;
-
     const _handleError = async () => {
       try {
         backendAPI.defaults.baseURL =
           "http://localhost:6060/v1/client/leads/order/checkout";
         // backendAPI.defaults.baseURL
 
-        await backendAPI.patch(`/success/${uuid}`);
+        await backendAPI.patch(`/success/${lead_uuid}`, success_checkout_body);
       } catch (error) {
         console.log(error);
       }

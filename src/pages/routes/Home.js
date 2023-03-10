@@ -5,8 +5,8 @@ import "./App.css";
 
 const initiate_checkout_body = {
   user: {
-    full_name: "Rey",
-    email: "Rey@Rey.com",
+    full_name: "Joe",
+    email: "Joe@Joe.com",
     mobile: "971582820152",
     password: "1qaz2wsx",
     confirm_password: "1qaz2wsx",
@@ -28,7 +28,7 @@ const initiate_checkout_body = {
 
 console.log(JSON.stringify(initiate_checkout_body));
 
-const lead_uuid = "0a26c0c9-9ddd-4ea7-b0ba-9c5944a07b0e";
+const lead_uuid = "f775cd17-ba33-4ae0-b0b5-94eadaf98728";
 
 // success-checkout?session_id=cs_test_b13CNvTahuEj7YCGRq1HtQbyQaruelotDHK9FkndUvUAfqZgNIQunTk0sK&lead_uuid=0a26c0c9-9ddd-4ea7-b0ba-9c5944a07b0e&delivery_date=2023-03-14&delivery_day=tuesday&delivery_period=6pm-10pm
 
