@@ -22,13 +22,13 @@ const initiate_checkout_body = {
   delivery: {
     day: "63fe19efe849c56fe3ebb0c7",
     period: "63fe19d4e849c56fe3ebb0ba",
-    date: "2023-03-14",
+    date: "2023-03-18",
   },
 };
 
 console.log(JSON.stringify(initiate_checkout_body));
 
-const lead_uuid = "f775cd17-ba33-4ae0-b0b5-94eadaf98728";
+const lead_uuid = "3b15fced-ce5a-4bfe-89f2-addfba428435";
 
 // success-checkout?session_id=cs_test_b13CNvTahuEj7YCGRq1HtQbyQaruelotDHK9FkndUvUAfqZgNIQunTk0sK&lead_uuid=0a26c0c9-9ddd-4ea7-b0ba-9c5944a07b0e&delivery_date=2023-03-14&delivery_day=tuesday&delivery_period=6pm-10pm
 
