@@ -9,9 +9,7 @@ const App = () => {
     try {
       e.preventDefault();
 
-      backendAPI.defaults.baseURL =
-        "http://localhost:6060/v1/client/users/signin";
-      await backendAPI.post("/", {
+      await backendAPI.post("/client/users/signin", {
         email: "jog@jo.com",
         password: "1qaz2wsx",
       });
@@ -24,9 +22,7 @@ const App = () => {
     try {
       e.preventDefault();
 
-      backendAPI.defaults.baseURL =
-        "http://localhost:6060/v1/client/users/signout";
-      await backendAPI.post("/", {
+      await backendAPI.post("/client/users/signout", {
         email: "jog@jo.com",
         password: "1qaz2wsx",
       });
